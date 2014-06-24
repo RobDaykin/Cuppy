@@ -1,0 +1,38 @@
+$catalogVersion=catalogVersion(catalog(id[default='Default']),version[default='Online'])[unique=true,default='Default:Online'];
+$descriptionIcon=descriptionIcon(code, catalogVersion(catalog(id[default='Default']),version[default='Online']));
+  
+INSERT_UPDATE Media;code[unique=true];$catalogVersion; mime;realfilename;@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator][forceWrite=true];
+;mcc-icon-cuppy.png;;image/png;mcc-icon-cuppy.png; jar:de.hybris.platform.cuppytrail.jalo.CuppytrailManager&/cuppytrail/media/mcc-icon-cuppy.png;
+  
+INSERT_UPDATE Divider;code[unique=true];area(code);sortorder;readPrincipals(uid);height;spacer;
+;cuppyDivider;platform;23;cockpitgroup;10;FALSE;;;;;;
+  
+INSERT_UPDATE StaticLink;code[unique=true];area(code);sortorder;readPrincipals(uid);title[lang=en];title[lang=de];$descriptionIcon;description[lang=en];description[lang=de];url;extensionName;parentLink(code)
+;cuppy;platform;24;;Cuppy Admin;Cuppy Admin;mcc-icon-cuppy.png;Cuppy administration.;Cuppy Administration.;{cuppy}/index.zul?persp=cuppy.perspective.cuppy;cuppy;
+;stadiumbrowser;channel;1;;Cuppytrail Stadiumbrowser;Cuppytrail Stadiumbrowser;;;;{cuppytrailfrontend}/stadiums;;
+
+INSERT_UPDATE DynamicLink;code[unique=true];area(code);sortorder;readPrincipals(uid);title[lang=en];title[lang=de];$descriptionIcon;description[lang=en];description[lang=de];url;extensionName;parentLink(code);script
+;cuppyCompetitions;platform;25;;Cuppy Competitions;Cuppy Competitions;mcc-icon-cuppy.png;Cuppy competitions.;Cuppy competitions.;{cuppy};cuppy;;"import de.hybris.platform.cuppy.model.CompetitionModel;
+import de.hybris.platform.cuppy.services.CompetitionService;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import org.zkoss.spring.SpringUtil;
+ 
+CompetitionService competitionService = (CompetitionService) SpringUtil.getBean(""competitionService"");
+List competitions = competitionService.getAllCompetitions();
+if (competitions.isEmpty())
+{
+    return Collections.EMPTY_MAP;
+}
+else
+{
+    Map links = new HashMap(competitions.size());
+    for (CompetitionModel competition : competitions)
+    {
+        links.put(competition.getName(), ""/cuppy/index.zul?persp=cuppy.perspective.frontend&events=competition&comp-item=""
+                + competition.getPk());
+    }
+    return links;
+}";
