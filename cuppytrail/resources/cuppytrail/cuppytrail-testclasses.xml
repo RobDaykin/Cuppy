@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <testclasses>
   <cuppytrail>
+    <testclass>de.hybris.platform.cuppytrail.facades.impl.DefaultStadiumFacadeUnitTest</testclass>
+    <testclass>de.hybris.platform.cuppytrail.daos.impl.DefaultStadiumDAOIntegrationTest</testclass>
     <testclass>de.hybris.platform.cuppytrail.jalo.CuppytrailTest</testclass>
+    <testclass>de.hybris.platform.cuppytrail.impl.DefaultStadiumServiceUnitTest</testclass>
+    <testclass>de.hybris.platform.cuppytrail.impl.DefaultStadiumServiceIntegrationTest</testclass>
+    <testclass>de.hybris.platform.cuppytrail.facades.impl.DefaultStadiumFacadeIntegrationTest</testclass>
   </cuppytrail>
 </testclasses>
