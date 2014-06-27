@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at 24-Jun-2014 09:03:11                        ---
+ * --- Generated at 26-Jun-2014 12:53:56                        ---
  * ----------------------------------------------------------------
  *  
  * [y] hybris Platform
@@ -27,6 +27,7 @@ public class GeneratedCuppytrailConstants
 	public static final String EXTENSIONNAME = "cuppytrail";
 	public static class TC
 	{
+		public static final String NOTEMPTYCUPPYCONSTRAINT = "NotEmptyCuppyConstraint".intern();
 		public static final String STADIUM = "Stadium".intern();
 		public static final String STADIUMACCESS = "StadiumAccess".intern();
 		public static final String STADIUMTYPE = "StadiumType".intern();
@@ -37,14 +38,18 @@ public class GeneratedCuppytrailConstants
 		{
 			public static final String STADIUM = "stadium".intern();
 		}
+		public static class MatchBet
+		{
+			public static final String MATCHSCORE = "matchScore".intern();
+		}
 	}
 	public static class Enumerations
 	{
 		public static class StadiumAccess
 		{
-			public static final String ROAD = "road".intern();
 			public static final String PLANE = "plane".intern();
 			public static final String RAIL = "rail".intern();
+			public static final String ROAD = "road".intern();
 		}
 		public static class StadiumType
 		{

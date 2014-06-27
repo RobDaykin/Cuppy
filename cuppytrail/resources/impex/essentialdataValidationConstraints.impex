@@ -1,0 +1,8 @@
+# Decimal Max constraits for home goals and guest goals
+insert_update DecimalMaxConstraint;active[allownull=true];annotation;descriptor(enclosingType(code),qualifier);id[unique=true];message[lang=en];owner(pk);qualifier;severity(code,itemtype(code));target;type(code);value[allownull=true]
+;true;javax.validation.constraints.DecimalMax;MatchBet:homeGoals;homeGoalsMaximumConstraint;This score is too high;;homeGoals;ERROR:Severity;de.hybris.platform.cuppy.model.MatchBetModel;MatchBet;10
+;true;javax.validation.constraints.DecimalMax;MatchBet:guestGoals;guestGoalsMaximumConstraint;This score is too high;;guestGoals;ERROR:Severity;de.hybris.platform.cuppy.model.MatchBetModel;MatchBet;10
+ 
+# Item of custom constraint type
+insert_update NotEmptyCuppyConstraint;active[allownull=true];annotation;descriptor(enclosingType(code),qualifier);id[unique=true,allownull=true];message[lang=de];message[lang=en];owner(pk)[allownull=true];qualifier;severity(code,itemtype(code));target;type(code)
+;true;de.hybris.platform.cuppytrail.constraints.NotEmptyCuppy;Group:name;groupNameNotEmptyConstraint;;Group name cannot be empty!;;name;ERROR:Severity;de.hybris.platform.cuppy.model.GroupModel;Group

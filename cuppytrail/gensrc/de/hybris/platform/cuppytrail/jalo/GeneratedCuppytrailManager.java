@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at 24-Jun-2014 09:03:11                        ---
+ * --- Generated at 26-Jun-2014 12:53:56                        ---
  * ----------------------------------------------------------------
  *  
  * [y] hybris Platform
@@ -19,18 +19,15 @@ package de.hybris.platform.cuppytrail.jalo;
 
 import de.hybris.platform.cuppy.jalo.Match;
 import de.hybris.platform.cuppytrail.constants.CuppytrailConstants;
+import de.hybris.platform.cuppytrail.constraints.NotEmptyCuppyConstraint;
 import de.hybris.platform.cuppytrail.jalo.Stadium;
 import de.hybris.platform.jalo.GenericItem;
-import de.hybris.platform.jalo.Item;
-import de.hybris.platform.jalo.Item.AttributeMode;
 import de.hybris.platform.jalo.JaloBusinessException;
 import de.hybris.platform.jalo.JaloSystemException;
 import de.hybris.platform.jalo.SessionContext;
 import de.hybris.platform.jalo.extension.Extension;
 import de.hybris.platform.jalo.type.ComposedType;
 import de.hybris.platform.jalo.type.JaloGenericCreationException;
-import java.util.Collections;
-import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -39,25 +36,30 @@ import java.util.Map;
 @SuppressWarnings({"deprecation","unused","cast","PMD"})
 public abstract class GeneratedCuppytrailManager extends Extension
 {
-	protected static final Map<String, Map<String, AttributeMode>> DEFAULT_INITIAL_ATTRIBUTES;
-	static
+	public NotEmptyCuppyConstraint createNotEmptyCuppyConstraint(final SessionContext ctx, final Map attributeValues)
 	{
-		final Map<String, Map<String, AttributeMode>> ttmp = new HashMap();
-		Map<String, AttributeMode> tmp = new HashMap<String, AttributeMode>();
-		tmp.put("stadium", AttributeMode.INITIAL);
-		ttmp.put("de.hybris.platform.cuppy.jalo.Match", Collections.unmodifiableMap(tmp));
-		DEFAULT_INITIAL_ATTRIBUTES = ttmp;
-	}
-	@Override
-	public Map<String, AttributeMode> getDefaultAttributeModes(final Class<? extends Item> itemClass)
-	{
-		Map<String, AttributeMode> ret = new HashMap<>();
-		final Map<String, AttributeMode> attr = DEFAULT_INITIAL_ATTRIBUTES.get(itemClass.getName());
-		if (attr != null)
+		try
 		{
-			ret.putAll(attr);
+			ComposedType type = getTenant().getJaloConnection().getTypeManager().getComposedType( CuppytrailConstants.TC.NOTEMPTYCUPPYCONSTRAINT );
+			return (NotEmptyCuppyConstraint)type.newInstance( ctx, attributeValues );
 		}
-		return ret;
+		catch( JaloGenericCreationException e)
+		{
+			final Throwable cause = e.getCause();
+			throw (cause instanceof RuntimeException ?
+			(RuntimeException)cause
+			:
+			new JaloSystemException( cause, cause.getMessage(), e.getErrorCode() ) );
+		}
+		catch( JaloBusinessException e )
+		{
+			throw new JaloSystemException( e ,"error creating NotEmptyCuppyConstraint : "+e.getMessage(), 0 );
+		}
+	}
+	
+	public NotEmptyCuppyConstraint createNotEmptyCuppyConstraint(final Map attributeValues)
+	{
+		return createNotEmptyCuppyConstraint( getSession().getSessionContext(), attributeValues );
 	}
 	
 	public Stadium createStadium(final SessionContext ctx, final Map attributeValues)

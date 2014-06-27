@@ -2,9 +2,12 @@
 <testclasses>
   <cuppytrail>
     <testclass>de.hybris.platform.cuppytrail.facades.impl.DefaultStadiumFacadeUnitTest</testclass>
+    <testclass>de.hybris.platform.cuppytrail.validation.ValidationTest</testclass>
     <testclass>de.hybris.platform.cuppytrail.daos.impl.DefaultStadiumDAOIntegrationTest</testclass>
+    <testclass>de.hybris.platform.cuppytrail.attributehandlers.MatchBetScoreAttributeUnitTest</testclass>
     <testclass>de.hybris.platform.cuppytrail.jalo.CuppytrailTest</testclass>
     <testclass>de.hybris.platform.cuppytrail.impl.DefaultStadiumServiceUnitTest</testclass>
+    <testclass>de.hybris.platform.cuppytrail.interceptors.StadiumCapacityIntegrationTest</testclass>
     <testclass>de.hybris.platform.cuppytrail.impl.DefaultStadiumServiceIntegrationTest</testclass>
     <testclass>de.hybris.platform.cuppytrail.facades.impl.DefaultStadiumFacadeIntegrationTest</testclass>
   </cuppytrail>

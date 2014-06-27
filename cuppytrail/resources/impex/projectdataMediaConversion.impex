@@ -1,0 +1,36 @@
+$lang=en
+$catalogVersion=catalogVersion(catalog(id[default='Default']),version[default='Staged'])[unique=true];
+ 
+INSERT_UPDATE ConversionMediaFormat;qualifier[unique=true];inputFormat(qualifier);conversion
+;stadiumListFormat;Default-WorkingFormat;-resize 100x>
+;stadiumDetailsFormat;Default-WorkingFormat;-resize 1200x>
+ 
+INSERT_UPDATE ConversionGroup;code[unique=true];supportedFormats(qualifier)
+;stadiumConversionGroup;stadiumListFormat,stadiumDetailsFormat
+ 
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$catalogVersion;conversionGroup(code)
+;beachStadiumContainer;;stadiumConversionGroup
+;cityStadiumContainer;;stadiumConversionGroup
+;discoStadiumContainer;;stadiumConversionGroup
+ 
+INSERT_UPDATE Media;code[unique=true];mediaContainer(qualifier,$catalogVersion);$catalogVersion; mime;realfilename;mediaFormat(qualifier);@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator][forceWrite=true];
+;beachStadium;beachStadiumContainer;;image/jpeg;nature_work.jpg;Default-WorkingFormat;jar:de.hybris.platform.cuppytrail.jalo.CuppytrailManager&/cuppytrail/media/nature_work.jpg;
+;cityStadium;cityStadiumContainer;;image/jpeg;city_work.jpg;Default-WorkingFormat;jar:de.hybris.platform.cuppytrail.jalo.CuppytrailManager&/cuppytrail/media/city_work.jpg;
+;discoStadium;discoStadiumContainer;;image/jpeg;nightlife_work.jpg;Default-WorkingFormat;jar:de.hybris.platform.cuppytrail.jalo.CuppytrailManager&/cuppytrail/media/nightlife_work.jpg;
+ 
+INSERT_UPDATE MediaConversionCronJob;code[unique=true];$catalogVersion;job(code);includedFormats(qualifier);sessionLanguage(isoCode[default=$lang])
+;cuppytrailMediaConversionCronJob;;mediaConversionJob;stadiumListFormat,stadiumDetailsFormat;
+ 
+INSERT_UPDATE CatalogVersionSyncCronJob; code[unique=true];job(code);sessionLanguage(isoCode[default=$lang]);logToFile[default=false];logToDataBase[default=false];forceUpdate[default=false]
+;cuppytrailMediaSyncCronJob;Sync Default\:Staged -> Default\:Online;
+ 
+#% import de.hybris.platform.core.Registry
+#% import de.hybris.platform.servicelayer.cronjob.CronJobService
+#% CronJobService cronJobService = Registry.getApplicationContext().getBean("cronJobService")
+#% cronJobService.performCronJob(cronJobService.getCronJob("cuppytrailMediaConversionCronJob"),true)
+#% cronJobService.performCronJob(cronJobService.getCronJob("cuppytrailMediaSyncCronJob"),true)
+ 
+INSERT_UPDATE Stadium;code[unique=true];capacity;stadiumImage(qualifier,$catalogVersion)
+;beachstadium;20000;beachStadiumContainer::Online
+;citystadium;60000;cityStadiumContainer::Online
+;discostadium;5000;discoStadiumContainer::Online

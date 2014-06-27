@@ -23,6 +23,7 @@
                         <attribute name="code"/>
                         <attribute name="capacity"/>
                         <attribute name="matches"/>
+                        <attribute name="stadiumImage"/>
                     </itemlayout>
                 </listview>
             </result>
@@ -37,10 +38,36 @@
                         <listlayout>
                             <attribute name="capacity"/>
                             <attribute name="matches"/>
+                            <attribute name="stadiumImage"/>
                         </listlayout>
                     </section>
                 </tab>
             </editor>
         </organizer>
     </type>
+    <type name="MatchBet" mode="append">
+   <organizer>
+      <result>
+         <listview mode="append">
+            <itemlayout mode="append">
+               <attribute name="matchScore"/>
+            </itemlayout>
+         </listview>
+      </result>
+      <editor>
+         <tab name="tab.cuppy">
+            <section name="section.cuppy">
+               <listlayout>
+                  <attribute name="matchScore"/>
+               </listlayout>
+            </section>
+         </tab>
+      </editor>
+   </organizer>
+   <defaultreference mode="append">
+      <itemlayout mode="append">
+         <attribute name="matchScore"/>
+      </itemlayout>
+   </defaultreference>
+</type>
 </configuration>

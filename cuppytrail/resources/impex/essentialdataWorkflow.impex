@@ -1,0 +1,26 @@
+"INSERT_UPDATE WorkflowTemplate";"code[unique=true]";"name[lang=de]";"name[lang=en]";"owner(uid)";"description[lang=de]";"description[lang=en]";"activationscript";"visibleForPrincipals(uid)";;;
+;"NewPlayerRegistration";"Spieler Registrierung";"New Player Registration";"admin";;;;"cuppyadmins";;;
+ 
+ 
+"INSERT_UPDATE WorkflowActionTemplate";"code[unique=true]";"name[lang=de]";"name[lang=en]";"description[lang=de]";"description[lang=en]";"principalAssigned(uid)";"workflow(code)[unique=true]";"sendEmail";"emailAddress";"rendererTemplate(code)";"actionType(code)"
+;"NPR_Confirm";"Bestätigung von einem Administrator";"Confirmation by an administrator";;;"cuppyadmins";"NewPlayerRegistration";"false";;;"start"
+;"NPR_End";"Ende";"End";;;"cuppyadmins";"NewPlayerRegistration";"false";;;"end"
+ 
+ 
+"INSERT_UPDATE AutomatedWorkflowActionTemplate";"code[unique=true]";"name[lang=de]";"name[lang=en]";"description[lang=de]";"description[lang=en]";"principalAssigned(uid)";"workflow(code)[unique=true]";"sendEmail";"emailAddress";"rendererTemplate(code)";"actionType(code)";jobHandler
+;"NPR_Confirm_Positive";"Spieler bestätigt";"Player confirmed";;;"cuppyadmins";"NewPlayerRegistration";"false";;;"normal";registrationConfirmationActionJob
+;"NPR_Confirm_Negative";"Spieler nicht bestätigt";"Player declined";;;"cuppyadmins";"NewPlayerRegistration";"false";;;"normal";registrationDeclineActionJob
+ 
+ 
+"INSERT_UPDATE WorkflowDecisionTemplate";"code[unique=true]";"name[lang=de]";"name[lang=en]";"actionTemplate(code)";"description[allownull=true]";;;;;;
+;"NPR001";"Spieler bestätigen";"Confirm player";"NPR_Confirm";;;;;;;
+;"NPR002";"Spieler nicht bestätigen";"Decline player";"NPR_Confirm";;;;;;;
+;"NPR003";"Ende";"End";"NPR_Confirm_Positive";;;;;;;
+;"NPR004";"Ende";"End";"NPR_Confirm_Negative";;;;;;;
+ 
+ 
+"INSERT_UPDATE WorkflowActionTemplateLinkTemplateRelation";"source(code)[unique=true]";"target(code)[unique=true]";"andConnectionTemplate";"qualifier";;;;;;;
+;"NPR001";"NPR_Confirm_Positive";"false";"WorkflowActionTemplateLinkTemplateRelation";;;;;;;
+;"NPR002";"NPR_Confirm_Negative";"false";"WorkflowActionTemplateLinkTemplateRelation";;;;;;;
+;"NPR003";"NPR_End";"false";"WorkflowActionTemplateLinkTemplateRelation";;;;;;;
+;"NPR004";"NPR_End";"false";"WorkflowActionTemplateLinkTemplateRelation";;;;;;;

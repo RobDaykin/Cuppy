@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.hybris.com/schema/cockpitng/widgets.xsd">
+
+    
+
+    <widget-connection inputId="input" outputId="nodeSelected" sourceWidgetId="cuppytrailbackoffice-explorer-tree" targetWidgetId="cuppytrailbackoffice-tree-node-adapter"/>
+    <widget-connection inputId="genericInput" outputId="true" sourceWidgetId="cuppytrailbackoffice-tree-node-adapter" targetWidgetId="cuppytrailbackoffice-typecode-extractor"/>
+    <widget-connection inputId="genericInput" outputId="true" sourceWidgetId="cuppytrailbackoffice-tree-node-adapter" targetWidgetId="cuppytrailbackoffice-search-enabler"/>
+    <widget-connection inputId="genericInput" outputId="false" sourceWidgetId="cuppytrailbackoffice-tree-node-adapter" targetWidgetId="cuppytrailbackoffice-search-disabler"/>
+    <widget-connection inputId="type" outputId="genericOutput" sourceWidgetId="cuppytrailbackoffice-typecode-extractor" targetWidgetId="cuppytrailbackoffice-search-logic"/>
+    <widget-connection inputId="enabled" outputId="genericOutput" sourceWidgetId="cuppytrailbackoffice-search-enabler" targetWidgetId="cuppytrailbackoffice-text-search"/>
+    <widget-connection inputId="enabled" outputId="genericOutput" sourceWidgetId="cuppytrailbackoffice-search-disabler" targetWidgetId="cuppytrailbackoffice-text-search"/>
+    <widget-connection inputId="searchtext" outputId="query" sourceWidgetId="cuppytrailbackoffice-text-search" targetWidgetId="cuppytrailbackoffice-search-logic"/>
+    <widget-connection inputId="pageable" outputId="pageable" sourceWidgetId="cuppytrailbackoffice-search-logic" targetWidgetId="cuppytrailbackoffice-simple-list"/>
+
+</widgets>

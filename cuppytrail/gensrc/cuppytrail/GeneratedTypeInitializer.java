@@ -56,6 +56,16 @@ public class GeneratedTypeInitializer extends AbstractTypeInitializer
 			false
 		);
 	
+		createItemType(
+			"NotEmptyCuppyConstraint",
+			"AttributeConstraint",
+			de.hybris.platform.cuppytrail.constraints.NotEmptyCuppyConstraint.class,
+			null,
+			false,
+			null,
+			false
+		);
+	
 		createRelationType(
 			"StadiumMatchRelation",
 			null,
@@ -91,6 +101,10 @@ public class GeneratedTypeInitializer extends AbstractTypeInitializer
 			
 				single_createattr_Stadium_StadiumType();
 			
+				single_createattr_Stadium_stadiumImage();
+			
+				single_createattr_MatchBet_matchScore();
+			
 		createRelationAttributes(
 			"StadiumMatchRelation", 
 			false, 
@@ -111,6 +125,8 @@ public class GeneratedTypeInitializer extends AbstractTypeInitializer
 			CollectionType.COLLECTION
 		);
 	
+				single_createattr_NotEmptyCuppyConstraint_annotation();
+			
 
 	}
 
@@ -162,6 +178,48 @@ public class GeneratedTypeInitializer extends AbstractTypeInitializer
 					de.hybris.platform.jalo.type.AttributeDescriptor.READ_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.WRITE_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.OPTIONAL_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.REMOVE_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.SEARCH_FLAG,
 					null,
 					sqlColumnDefinitions
+				);
+			
+	}
+	
+	public void single_createattr_Stadium_stadiumImage() throws JaloBusinessException
+	{
+		
+						Map sqlColumnDefinitions = null;
+					
+				createPropertyAttribute(
+					"Stadium", 
+					"stadiumImage",  
+					null,
+					"MediaContainer",
+					de.hybris.platform.jalo.type.AttributeDescriptor.READ_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.WRITE_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.OPTIONAL_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.REMOVE_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.SEARCH_FLAG,
+					null,
+					sqlColumnDefinitions
+				);
+			
+	}
+	
+	public void single_createattr_NotEmptyCuppyConstraint_annotation() throws JaloBusinessException
+	{
+		
+				redeclareAttribute(
+					"NotEmptyCuppyConstraint", 
+					"annotation",
+					"java.lang.Class",
+					de.hybris.platform.jalo.type.AttributeDescriptor.READ_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.INITIAL_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.REMOVE_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.SEARCH_FLAG
+				);
+			
+	}
+	
+	public void single_createattr_MatchBet_matchScore() throws JaloBusinessException
+	{
+		
+				createDynamicAttribute(
+					"MatchBet", 
+					"matchScore",  
+					"java.lang.Integer",
+					null,
+					de.hybris.platform.jalo.type.AttributeDescriptor.READ_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.OPTIONAL_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.REMOVE_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.SEARCH_FLAG
 				);
 			
 	}
@@ -235,6 +293,35 @@ public class GeneratedTypeInitializer extends AbstractTypeInitializer
 			single_setAttributeProperties_Stadium_capacity();
 		
 			single_setAttributeProperties_Stadium_StadiumType();
+		
+			single_setAttributeProperties_Stadium_stadiumImage();
+		
+				{
+				Map customPropsMap = new HashMap();
+				
+				setItemTypeProperties(
+					"NotEmptyCuppyConstraint",
+					false,
+					true,
+					true,
+					null,
+					customPropsMap
+				);
+				}
+			
+			single_setAttributeProperties_NotEmptyCuppyConstraint_annotation();
+		
+				{
+				Map customPropsMap = new HashMap();
+				
+				changeMetaType(
+					"MatchBet",
+					null,
+					customPropsMap
+				);
+				}
+			
+			single_setAttributeProperties_MatchBet_matchScore();
 		
 				setDefaultProperties(
 					"StadiumType",
@@ -317,6 +404,74 @@ public class GeneratedTypeInitializer extends AbstractTypeInitializer
 								null,
 								customPropsMap,
 								null
+							);
+						}
+					
+						public void single_setAttributeProperties_Stadium_stadiumImage() throws JaloBusinessException
+						{
+							
+							
+							
+							Map customPropsMap = new HashMap();
+							
+							setAttributeProperties(
+								"Stadium", 
+								"stadiumImage",
+								false, 
+								null,
+								null,
+								null,
+								true,
+								true,
+								null,
+								customPropsMap,
+								null
+							);
+						}
+					
+						public void single_setAttributeProperties_NotEmptyCuppyConstraint_annotation() throws JaloBusinessException
+						{
+							
+							
+							
+							Map customPropsMap = new HashMap();
+							
+							setAttributeProperties(
+								"NotEmptyCuppyConstraint", 
+								"annotation",
+								false, 
+								
+                        de.hybris.platform.cuppytrail.constraints.NotEmptyCuppy.class
+                    ,
+								"de.hybris.platform.cuppytrail.constraints.NotEmptyCuppy.class",
+								null,
+								true,
+								true,
+								null,
+								customPropsMap,
+								null
+							);
+						}
+					
+						public void single_setAttributeProperties_MatchBet_matchScore() throws JaloBusinessException
+						{
+							
+							
+							
+							Map customPropsMap = new HashMap();
+							
+							setAttributeProperties(
+								"MatchBet", 
+								"matchScore",
+								false, 
+								null,
+								null,
+								null,
+								true,
+								true,
+								null,
+								customPropsMap,
+								"matchBetScoreAttributeHandler"
 							);
 						}
 					

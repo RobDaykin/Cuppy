@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="/platform"/>
+	<classpathentry exported="true" kind="src" path="/backoffice"/>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/backoffice-core-1.15.3.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/backoffice-widgets-1.15.3.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/ckez-4.1.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/cockpit-data-integration-1.15.3.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/cockpit-demo-widgets-1.15.3.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/cockpit-module-aggregator-1.15.3.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/cockpit-standard-editors-1.15.3.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/cockpitadmin-1.15.3.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/cockpitcore-1.15.3.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/cockpitframework-1.15.3.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/cockpittesting-1.15.3.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/cockpitwidgets-1.15.3.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/commons-exec-1.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/commons-lang3-3.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/gmapsz-3.0.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/httpclient-4.3.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/httpcore-4.3.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/jaxb-impl-2.2.4-1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/jfreechart.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/json-20131018.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/sac-1.3.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/selenium-api-2.39.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/selenium-firefox-driver-2.39.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/selenium-remote-driver-2.39.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/selenium-server-2.39.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/selenium-support-2.39.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/silvertail-6.5.1.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/zcommon-6.5.1.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/zcommons-el-1.1.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/zel-6.5.1.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/zhtml-6.5.1.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/zk-6.5.1.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/zkbind-6.5.1.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/zkex-6.5.1.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/zkmax-6.5.1.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/zkplus-6.5.1.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/zkspring-core-3.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/zkspring-security-3.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/zml-6.5.1.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/zul-6.5.1.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/backoffice/web/webroot/WEB-INF/lib/zweb-6.5.1.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://download.hybris.com/api/5.1.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="resources"/>
+	<classpathentry kind="src" output="eclipsebin/classes" path="src"/>
+	<classpathentry kind="src" output="eclipsebin/backoffice/classes" path="backoffice/src"/>
+	<classpathentry kind="src" output="eclipsebin/classes" path="testsrc"/>
+	<classpathentry kind="src" output="eclipsebin/classes" path="gensrc"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/cuppytrail"/>
+	<classpathentry kind="output" path="eclipsebin/notused"/>
+</classpath>

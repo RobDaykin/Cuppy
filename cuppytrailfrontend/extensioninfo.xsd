@@ -105,11 +105,6 @@
 				<xs:documentation>Short description of this extension. Is used by the hybris package manager.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
-		<xs:attribute name="usemaven" type="xs:string" use="optional">
-			<xs:annotation>
-				<xs:documentation>If 'true' uses maven and external-dependencies.xml file for fetching required libraries into \lib and \web\webroot\WEB-INF\lib.</xs:documentation>
-			</xs:annotation>
-		</xs:attribute>
 	</xs:complexType>
 
 	<xs:complexType name="requires-extensionType">
